@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background-color: #111;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.codesonix-container {
+  background-color: #1c1c1c;
+  border: 2px solid #444;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+  text-align: center;
+}
+
+h1 {
+  color: #ff0000;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.sample-upload input[type="file"] {
+  display: none;
+}
+
+.sample-label {
+  background-color: #333;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid #555;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #aaa;
+}
+
+.controls {
+  margin-top: 1.5rem;
+}
+
+.fader-container {
+  margin-bottom: 1rem;
+}
+
+.fader {
+  width: 100%;
+  background: #444;
+  appearance: none;
+  height: 6px;
+  border-radius: 4px;
+}
+
+.fader::-webkit-slider-thumb {
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #ff0000;
+  border: 2px solid #fff;
+}
+
+.button-pad {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.sound-button {
+  background-color: #222;
+  color: #eee;
+  border: 2px solid #444;
+  padding: 0.7rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sound-button:hover {
+  background-color: #ff0000;
+}

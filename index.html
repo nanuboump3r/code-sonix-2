@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodeSonix UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="codesonix-container">
+    <h1>CodeSonix</h1>
+    
+    <div class="sample-upload">
+      <label for="sampleInput" class="sample-label">Sample Here</label>
+      <input type="file" id="sampleInput" accept="audio/*"/>
+    </div>
+
+    <div class="controls">
+      <div class="fader-container">
+        <label>Volume</label>
+        <input type="range" min="0" max="100" value="50" class="fader"/>
+      </div>
+
+      <div class="fader-container">
+        <label>Pitch</label>
+        <input type="range" min="-12" max="12" value="0" class="fader"/>
+      </div>
+
+      <div class="button-pad">
+        <button class="sound-button" data-sound="Kick.wav">Kick</button>
+        <button class="sound-button" data-sound="Snare.wav">Snare</button>
+        <button class="sound-button" data-sound="Hihat.wav">Hihat</button>
+        <button class="sound-button" data-sound="Fx.wav">Fx</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
